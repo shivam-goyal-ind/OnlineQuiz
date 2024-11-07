@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Quiz</title>
+</head>
+<body>
+    <div class="quiz containerNew">
+        <div class="header">Online Quiz</div>
+        <div id="question-container">
+            <p id="question-text">Question will appear here</p>
+            <div id="options"></div>
+        </div>
+        <div class="nav-buttons">
+            <button id="prev" onclick="prevQuestion()" disabled>Previous</button>
+            <button id="next" onclick="nextQuestion()">Next</button>
+        </div>
+        <button id="submit" class="hide" onclick="submitQuiz()">Submit</button>
+        <div id="score-container" class="hide">
+            <p id="score-text">Your Score: 0%</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
